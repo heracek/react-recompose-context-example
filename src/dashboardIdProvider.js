@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const DASHBOARD_ID_CONTEXT_KEY = 'DASHBOARD_ID_CONTEXT_KEY';
 export const dashboardIdContextPropTypes = {
-  [DASHBOARD_ID_CONTEXT_KEY]: PropTypes.number,
+  [DASHBOARD_ID_CONTEXT_KEY]: PropTypes.string,
 };
 
 const provideDashborarId = withContext(

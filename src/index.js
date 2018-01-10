@@ -19,11 +19,11 @@ const SomeOtherComponent = () => (
 const App = () => (
   <div style={styles}>
     {/* HERE: This provides context for `Hello` component  */}
-    <DashboardIdProvider dashboardId={42}>
+    <DashboardIdProvider dashboardId="42">
       <Hello name="Context 1 example" />
     </DashboardIdProvider>
 
-    <DashboardIdProvider dashboardId={123}>
+    <DashboardIdProvider dashboardId="123">
       <Hello name="Context 2 example" />
     </DashboardIdProvider>
 
@@ -31,7 +31,7 @@ const App = () => (
       HERE: This provides context for `Hello` component
       although it's wrapped in other component.
     */}
-    <DashboardIdProvider dashboardId={123456}>
+    <DashboardIdProvider dashboardId="123456">
       <SomeOtherComponent />
     </DashboardIdProvider>
 
